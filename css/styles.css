@@ -62,6 +62,10 @@ img {
   height: auto;
 
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /*--------------------------Header-------------------------- */
 
@@ -205,7 +209,7 @@ img {
 /*-----------------------About----------------------- */
 
 .about {
-  margin: 94px 0px 94px 0px;
+  padding-bottom: -94px;
 }
 
 .about-title {
@@ -271,7 +275,6 @@ img {
 
 .team {
   height: 650px;
-  margin-top: 95px;
   background-color: var(--button-color);
 }
 
@@ -294,8 +297,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
-  
-  padding-top: 90px;
+
   margin-bottom: 50px;
 }
 
@@ -419,10 +421,6 @@ img {
 }
 
 /* ------------------------------Buttons------------------------- */
-.portfolio-examples {
-  margin-top: 95px;
-  margin-bottom: 105px;
-}
 
 .portfolio-examples-buttons {
   display:flex;
