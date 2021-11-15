@@ -55,6 +55,8 @@ ul {
 
 .hero {
   height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 img {
   display: block;
@@ -171,9 +173,9 @@ img {
 }
 /* --------------------------Hero--------------------------*/
 
-.button {
+/* .button {
   font-family: inherit;
-}
+} */
 .hero-background {
   background-color: var(--footer-color);
   height: 600px;
@@ -188,7 +190,7 @@ img {
   text-transform: uppercase;
   color: var(--main-title-color);
 
-  padding: 200px 0px 30px 0px;
+  padding: 0px 0px 30px 0px;
 }
 
 .hero-btn {
@@ -196,14 +198,16 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.85;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--main-title-color);
+  border-radius: 4px;
+  display: flex;
+  padding: 10px 32px;
+  margin: 0 auto;
 
-  margin-left: 500px;
+
 }
 
 /*-----------------------About----------------------- */
@@ -221,7 +225,7 @@ img {
 
   color: var(--second-title-color);
   display: inline-block;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .about-title-discription {
@@ -231,13 +235,13 @@ img {
   color: var(--main-text-color);
   display: inline-block;
   
+  
 }
 
 .about-us-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .about-list {
@@ -289,6 +293,8 @@ img {
 
 .team-list-item {
   margin-right: 30px;
+  background-color: var(--main-title-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .team-list-item:nth-child(4n + 4) {
@@ -314,7 +320,7 @@ img {
   color: var(--second-title-color);
   text-align: center;
 
-  padding-top: 30px
+  
 }
 
 .team-list-position {
@@ -324,14 +330,22 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 
-  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.team-list-card {
+  padding: 30px 0px;
 }
 
 /* --------------------------Footer-------------------------- */
 
 .footer {
   background-color: var(--footer-color);
-  height: 250px;
+  height: 252px;
+}
+
+.footer-container {
+  padding: 60px 0px;
 }
 .footer-logo-one {
   font-size: 26px;
@@ -340,8 +354,7 @@ img {
   color: var(--accent-color);
   
   display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  
 }
 
 .footer-logo-two {
@@ -350,9 +363,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-title-color);
   
-  margin-top: 30px;
-  margin-bottom: 20px;
   display: inline-block;
+}
+
+.adress-list {
+  margin-top: 20px;
 }
 
 .footer-adress-link {
@@ -364,7 +379,7 @@ img {
   color: var(--main-title-color);
   
   display: inline-block;
-  margin-top: 10px;
+
 }
 
 .footer-email-link {
@@ -373,7 +388,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .footer-phone-link {
@@ -383,7 +398,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 /* -----------------------PORTFOLIO PAGE----------------------- */
@@ -410,7 +425,7 @@ img {
   background-color: var(--accent-color);
 }
 
-.portfolio-examples-list-item-company {
+.portfolio-item-company {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -418,7 +433,7 @@ img {
   color: var(--second-title-color);
 }
 
-.portfolio-examples-list-item-project {
+.portfolio-item-project {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 0.03em;
@@ -427,29 +442,33 @@ img {
 
 /* ------------------------------Buttons------------------------- */
 
-.portfolio-examples-buttons {
+.portfolio-buttons {
   display:flex;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
 
-.portfolio-button-list-item {
+.portfolio-button-item {
   margin-right: 10px;
+  
 }
 
-.portfolio-button-list-item:last-child {
+.portfolio-button-item:last-child {
   margin-right: 0px;
 }
 
-/* ------------------------------List------------------------- */
+.portfolio-button{
+  padding: 6px 22px;
+  border-radius: 4px;
+ }/* ------------------------------List------------------------- */
 
-.portfolio-examples-projects-list {
+.portfolio-projects-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.portfolio-examples-project-list-item {
+.portfolio-project-item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -460,19 +479,22 @@ img {
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
-}
-
-.portfolio-examples-project-list-item:nth-child(3n) {
-  margin-right: 0px;
-} 
-.portfolio-examples-list-item-company{
   padding-top: 20px;
-  padding-left: 25px;
-}
-.portfolio-examples-list-item-project {
-  padding-left: 25px;
   padding-bottom: 20px;
 }
-.portfolio-examples-project-list-item:nth-last-child(-n+3) {
+
+.portfolio-project-item:nth-child(3n) {
+  margin-right: 0px;
+} 
+.portfolio-item-company{
+  
+  padding-left: 25px;
+}
+.portfolio-item-project {
+  padding-left: 25px;
+  
+}
+.portfolio-project-item:nth-last-child(-n+3) {
   margin-bottom: 0px;
 }
+
